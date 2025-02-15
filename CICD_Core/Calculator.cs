@@ -1,16 +1,15 @@
-﻿namespace CICD_Core
+﻿
+namespace CICD_Core
 {
     public class Calculator
     {
-        public static double Divide(int v1, int v2)
+        public static double Divide(int a, int b)
         {
-            if (v2 == 0)
+            if (b == 0)
             {
-
-
-                throw new NotImplementedException();
+                throw new DivideByZeroException();
             }
-            return v1 / v2;
+            return (double)a / (double)b;
         }
     }
 }
