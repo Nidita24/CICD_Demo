@@ -27,5 +27,6 @@ while (true)
         break;
     }
 }
+
 double d = Calculator.Divide(a, b);
 Console.WriteLine($"{a} / {b} = {d}");
